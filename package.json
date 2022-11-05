@@ -1,0 +1,38 @@
+{
+  "name": "ahj_http1_backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever --minUptime 1000 --spinSleepTime 1000 server.js",
+    "watch": "forever --minUptime 1000 --spinSleepTime 1000 -w server.js"
+  },
+  "engines": {
+    "node": "12.16.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tpecherkina/http-backend.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "forever": "^4.0.1",
+    "kill-port": "^2.0.1",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "koa2-cors": "^2.0.6",
+    "uuid": "^8.3.2"
+  },
+  "description": "https://ahj-http1-bk.herokuapp.com/",
+  "bugs": {
+    "url": "https://github.com/KuzminaYuliya/ahj_http1_backend/issues"
+  },
+  "homepage": "https://github.com/KuzminaYuliya/ahj_http1_backend#readme",
+  "devDependencies": {
+    "babel-loader": "^9.1.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
